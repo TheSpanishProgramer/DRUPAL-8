@@ -1,0 +1,342 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Drupal 8 Tutorial - 90VTwin Motorcycles Dealer</title>
+
+    <meta name="description" content="Presentation for Drupal 8 tutorial">
+    <meta name="author" content="Luis José Sánchez">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+
+        <section>
+          <h1>Drupal 8 tutorial</h1>
+          <img src="img/drupal8logo.png" width="400">
+        </section>
+        
+        <section>
+          <img src="img/moteros.jpg" width="400">
+          <h2 class="fragment">90VTwin - Motorcycles Dealer</h1>
+          <h3 class="fragment">A complete web site with news, location, contact form, etc. from scratch.</h3>
+        </section>
+<!--
+        <section>
+          <h1>Aquí va la captura de la web terminada!!!!</h1>
+          <img class="" src="img/drupal.png" width="400">
+        </section>
+-->
+        <section>
+          <h2>Tasks</h2>
+          <ul>
+            <li class="fragment">Install Drupal 8 (locally)</li>
+            <li class="fragment">Configure</li>
+            <li class="fragment">Create sections</li>
+            <ul>
+              <li class="fragment">Home</li>
+              <li class="fragment">Services</li>
+                <ul class="fragment">
+                  <li>Sale of motorbikes</li>
+                  <li>Mechanics workshop</li>
+                  <li>Parts store</li>
+                </ul>
+              <li class="fragment">Location</li>
+              <li class="fragment">Contact</li>
+              <li class="fragment">News</li>
+            </ul>
+          </ul>
+        </section>
+
+
+        <section>
+          <h2>Drupal 8 installation</h2>
+          <ul>
+            <li class="fragment">Requirements</li>
+            <ul>
+              <li class="fragment">MySQL</li>
+              <li class="fragment">PHP</li>
+              <li class="fragment">Apache</li>
+            </ul>
+            <li class="fragment">
+              Installation: <a target="_blank"  href="https://github.com/LuisJoseSanchez/drupal-8-cheat-sheet#drupal-8-installation">Drupal 8 Cheat Sheet: Drupal 8 installation</a>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Standard Drupal 8 installation</h2>
+          <img src="img/90vtwin01.png">
+        </section>
+
+        <section>
+          <h2>Basic configuration</h2>
+          <ul>
+            <li class="fragment">
+              Click on the header to configure block<br>
+              <img src="img/header.png">
+            </li>
+            <li class="fragment">
+              Set title and logo<br>
+            </li>
+          </ul>
+        </section>
+
+<!--
+        <section>
+          <h2>Instalación de módulos</h2>
+          <ul>
+            <li class="fragment">
+              Instalar módulo "Admin menu".
+              <ul>
+                <li class="fragment">
+                  Módulos &#8594; Activar <b>Update manager</b>
+                </li>
+                <li class="fragment">
+                  Módulos &#8594; Instalar nuevo módulo
+                </li>
+                <li class="fragment">
+                  En otra pestaña, ir a <a href="https://www.drupal.org/" target="_blank">www.drupal.org</a>
+                </li>
+                <li class="fragment">
+                  Buscar <b>admin menu</b>
+                </li>
+                <li class="fragment">
+                  Seleccionar <b>Modules</b>
+                </li>
+                <li class="fragment">
+                  Seleccionar <b>Administration menu</b>
+                </li>
+                <li class="fragment">
+                  Copiar la ruta del enlace
+                </li>
+                <li class="fragment">
+                  Pegar la ruta en <b>Instalar desde una URL</b>
+                </li>
+              </lu>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Más ajustes</h2>
+          <ul>
+            <li class="fragment">
+              Desactivar la barra de menús que viene por defecto:
+              <ul>
+                Módulos &#8594; Desactivar <b>Toolbar</b>
+              </ul>
+            </li>
+            <li class="fragment">
+              Instalar CKEditor. Este módulo sustituye los "textarea" por un editor visual.
+            </li>
+            <li class="fragment">
+              Instalar IMCE. Se integra con CKEditor y permite subir archivos al servidor.
+            </li>
+            <li class="fragment">
+              Enlazar CKEditor con IMCE:
+              <ul>
+                <li class="fragment">
+                  Módulos &#8594; CKEditor &#8594; Configurar
+                </li>
+                <li class="fragment">
+                  Full HTML &#8594; editar &#8594; FILE BROWSER SETTINGS
+                </li>
+                <li class="fragment">
+                  File browser type &#8594; IMCE
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+-->
+        <section>
+          <h2>Section "Services"</h2>
+          <li class="fragment">
+            Content &#8594; + Add content &#8594; Basic page<br>
+          </li>
+          <li class="fragment">
+            Title &#8594; Services &#8594; Put image and text (samples <a href="https://github.com/LuisJoseSanchez/drupal-8-tutorial/tree/master/material" target="_blank">here</a>)<br>
+          </li>
+          <li class="fragment">
+            MENU SETTINGS &#8594; check "Provide a menu link"<br>
+          </li>
+          <li class="fragment">
+            URL PATH SETTINGS &#8594; URL alias &#8594; /services<br>
+          </li>
+          <li class="fragment">
+            Click "Save and publish"<br>
+          </li>
+        </section>
+
+        <section>
+          <h2>Section "Sale of motorbikes"</h2>
+          <li class="fragment">
+            Content &#8594; + Add content &#8594; Basic page<br>
+          </li>
+          <li class="fragment">
+            Title &#8594; Sale of motorbikes &#8594; Put image and text<br>
+          </li>
+          <li class="fragment">
+            MENU SETTINGS &#8594; check "Provide a menu link"<br>
+            Parent item &#8594; Services<br>
+          </li>
+          <li class="fragment">
+            URL PATH SETTINGS &#8594; URL alias &#8594; /sale<br>
+          </li>
+          <li class="fragment">
+            Click "Save and publish"<br>
+          </li>
+        </section>
+
+        <section>
+          <h2>Set the main menu in the side bar</h2>
+          <li class="fragment">
+            Structure &#8594; Block layout<br>
+            Set "Main navigation" region to "Sidebar first"
+          </li>
+          <img class="fragment" src="img/sidebar.png">
+        </section>
+
+        <section>
+          <h2>Expand submenu</h2>
+          <li class="fragment">
+            Structure &#8594; Menus &#8594; Main navigation &#8594; Edit menu<br>
+            Services &#8594; Edit &#8594; Check "Show as expanded"
+          </li>
+          <li class="fragment">
+            Structure &#8594; Block layout<br>
+            Main navigation &#8594; Configure &#8594; MENU LEVELS &#8594; Maximum number of menu levels to display
+&#8594; Unlimited
+          </li>
+        </section>
+
+        <section>
+          <h2>Sections "Mechanics workshop" and "Parts store"</h2>
+          <li class="fragment">
+            Add sections the same way as seen before.
+          </li>
+          <li class="fragment">
+            Click "Save blocks"
+          </li>
+        </section>
+
+        <section>
+          <h2>Section "Location"</h2>
+          <li class="fragment">
+            Content &#8594; + Add content &#8594; Basic page<br>
+          </li>
+          <li class="fragment">
+            Search the address in Google Maps and obtain iframe (share option)
+          </li>
+          <li class="fragment">
+            Text format &#8594; Full HTML
+          </li>
+          <li class="fragment">
+            Source &#8594; Paste iframe
+          </li>
+          <li class="fragment">
+            MENU SETTINGS &#8594; check "Provide a menu link"<br>
+          </li>
+          <li class="fragment">
+            URL PATH SETTINGS &#8594; URL alias &#8594; /location<br>
+          </li>
+        </section>
+
+        <section>
+          <h2>Add news to the home page</h2>
+          <li class="fragment">
+            Content &#8594; + Add content &#8594; Article
+          </li>
+          <li class="fragment">
+            Add text and image
+          </li>
+          <li class="fragment">
+            PROMOTION OPTIONS &#8594; make sure "Promoted to front page" is checked
+          </li>
+        </section>
+
+        <section>
+          <h2>Contact form</h2>
+          <ul>
+            <li>
+              There is by default a contact form in /contact
+            </li>
+            <li>
+              Structure &#8594; Menus &#8594; Main navigation &#8594; Edit menu &#8594; + Add link 
+            </li>
+            <img src="img/contact.png" width="660">
+          </ul>
+        </section>
+
+        <section>
+          <h1>Thank you!</h1>
+        </section>
+
+      </div>
+
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true },
+          { src: 'plugin/notes/notes.js', async: true }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>
